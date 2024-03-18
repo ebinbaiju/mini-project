@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>staff Registration</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+
+
+        body {
+            background-color: gray;
+        }
+
+        .main-section {
+            width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .side {
+            flex: 40%;
+            background-color: ghostwhite;
+            padding: 20px;
+        }
+
+        .img1 {
+            width: 400px;
+            height: 650px;
+        }
+
+        .main {
+            flex: 60%;
+            background-color: ghostwhite;
+            text-align: center;
+        }
+
+
+
+
+        .input1 {
+            width: 250px;
+            height: 35px;
+           
+            border-radius: 20px;
+            border: none;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .button1 {
+            width: 250px;
+            height: 35px;
+            background-color: lightseagreen;
+            border-radius: 30px;
+            border: none;
+            color: white;
+            text-align: center;
+        }
+
+        .main1 {
+            width: 100px;
+        }
+        .p2 {
+            font-size: small;
+        }
+
+        .a1 {
+            text-decoration: none;
+        } 
+
+        
+    </style>    
+</head>
+
+<body>
+    <div class="main-section">
+        <div class="content">
+            <div class="side">
+                <img src="/static/images/new1.png" class="img1">
+            </div>
+            <div class="main"> 
+                <form action="" method="POST">
+                    {%csrf_token%}
+
+                    <h1>Registration Form</h1>
+
+                    <input type="text" placeholder="Name" name="name" class="input1" required>
+                    
+                    <input type="text" placeholder=" Age" name="age" class="input1"  required><br><br>
+
+                    <label class="gender"><b>gender</b></label>
+                    <input type="radio" name="gender" value="male" class="gender" required>male
+                    <input type="radio" name="gender" value="female" class="gender" required>female<br><br>
+
+                    <input type="text" placeholder="Email" name="email" class="input1"  required>
+                
+                    <input type="text" placeholder="Phone Number" name="phonenumber" class="input1"  required>
+                    
+                    <input type="text" placeholder="username" name="username" class="input1"  required>
+                
+                    <input type="password" placeholder="Password" name="password" class="input1"  required>
+                    
+                   
+                    <input type="submit" class="button1"  value="submit"> 
+
+                    <p class="p2">Already sign in?
+                        <a href="/stafflogin/" title="signin" class="a1">Sign in</a>
+                    </p>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

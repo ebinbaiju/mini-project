@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>my cart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            border-radius: 30px;
+            height: 45px;
+            margin-top: 5px;
+        }
+
+        .navbar a {
+            position: relative;
+            left: 55px;
+            margin: 50px;
+            text-decoration: none;
+        }
+
+        .heading {
+            position: relative;
+            left: 40px;
+
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: rgb(0, 0, 0);
+        }
+
+        .p1 {
+            display: inline;
+            margin: 30px;
+            position: relative;
+            left: 110px;
+            top: 20px;
+        }
+
+        .side1 {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 50%;
+        }
+
+        .sub1 {
+            background-color: #ececec;
+            position: relative;
+            flex: 40%;
+            width: 400px;
+            height: 300px;
+            top: 80px;
+            left: 50px;
+        }
+
+        .side2 {
+            display: flex;
+            flex: 50%;
+        }
+
+        .edit1 {
+            position: relative;
+            left: 150px;
+            top: 60px;
+        }
+
+        .img1 {
+            position: relative;
+            top: 60px;
+            left: 50px;
+        }
+
+        .edit2 {
+            position: relative;
+            left: 130px;
+            top: 24px;
+            width: 100px;
+        }
+
+        .edit3 {
+            position: relative;
+            left: 255px;
+            bottom: 9px;
+            width: 80px;
+        }
+
+        .edit4 {
+            position: relative;
+            left: 474px;
+            bottom: 43px;
+            width: 80px;
+        }
+
+        .img2 {
+            position: relative;
+            left: 50px;
+        }
+
+        .edit5 {
+            position: relative;
+            bottom: 70px;
+            left: 130px;
+        }
+
+        .edit6 {
+            position: relative;
+            bottom: 105px;
+            left: 255px;
+        }
+
+        .line {
+            width: 85%;
+            height: 1px;
+            border: 0 none;
+            background-color: black;
+            position: relative;
+            left: 40px;
+            bottom: 30px;
+        }
+
+        .line1 {
+            width: 85%;
+            height: 1px;
+            border: 0 none;
+            background-color: black;
+            position: relative;
+            left: 40px;
+            bottom: 80px;
+        }
+
+        .line2 {
+            width: 450PX;
+            height: 1px;
+            border: 0 none;
+            background-color: black;
+            position: relative;
+            top: 160px;
+        }
+
+        .edit7 {
+            position: relative;
+            left: 150px;
+            top: 65px;
+            font-size: 35px;
+        }
+
+        .sub2 {
+            height: 100px;
+            width: 200px;
+        }
+
+        .line2 {
+            width: 400PX;
+            height: 1px;
+            border: 0 none;
+            background-color: black;
+            position: relative;
+            left: 150px;
+            top: 80px;
+        }
+
+        .edit8 {
+            position: relative;
+            left: 160px;
+            top: 90px;
+        }
+
+        .edit9 {
+            position: relative;
+            left: 450px;
+            top: 55px;
+        }
+
+        .line3 {
+            width: 400PX;
+            height: 1px;
+            border: 0 none;
+            background-color: black;
+            position: relative;
+            left: 150px;
+            top: 60px;
+        }
+
+        .edit10 {
+            position: relative;
+            left: 160px;
+            top: 75px;
+        }
+
+        .edit11 {
+            position: relative;
+            left: 450px;
+            top: 45px;
+        }
+
+        .but1 {
+            height: 30px;
+            width: 160px;
+            border: 0px solid black;
+            left: 160px;
+            position: relative;
+            top: 55px;
+            border-radius: 20px;
+            background-color: rgb(38, 132, 240);
+            color: #ddd;
+        }
+
+        .side3 {
+            display: flex;
+            flex: 50%;
+            height: 100px;
+            width: 580px;
+            background-color: rgb(222, 222, 223);
+            position: relative;
+            top: 110px;
+            left: 53px;
+        }
+
+        .sub3 {
+            position: relative;
+            top: 34px;
+            left: 53px;
+        }
+
+        .box1 {
+            height: 38px;
+            width: 250px;
+            border: 1px solid black;
+            border-color: #918d8d;
+        }
+
+        .but2 {
+            height: 38px;
+            width: 150px;
+            background-color: rgb(46, 128, 235);
+            border: 0px;
+            position: relative;
+            left: 40px;
+            border-radius: 20px;
+            color: #ddd;
+            top: 1px;
+        }
+
+        .sub4 {
+            background-color: rgb(236, 229, 229);
+            padding: 30px;
+            margin-top: 100px;
+            position: relative;
+            height: 300px;
+            top: 100px;
+        }
+
+        h2 {
+            margin-top: 10px;
+            position: relative;
+            left: 20px;
+        }
+
+        .sub5 {
+            width: 500px;
+            height: 2px;
+            border-radius: 10px;
+            background: #000;
+            margin-top: 5px;
+        }
+
+        button {
+            position: absolute;
+            left: 45%;
+            top: 38%;
+            width: 130px;
+            height: 30px;
+            background-color: rgb(18, 151, 228);
+            border-radius: 10px;
+            color: #fff;
+            font-size: 10px;
+            border: 0px solid black;
+        }
+
+        .sub6 {
+            margin-top: 1%;
+        }
+
+        .img5 {
+            height: 18px;
+        }
+
+        .sub7 {
+            display: inline;
+            position: relative;
+            padding: 5px;
+        }
+
+        .h6 {
+            position: relative;
+            top: 110px;
+            right: 20px;
+        }
+
+        .h7 {
+            position: relative;
+            top: 70px;
+            width: 100px;
+            left: 1070px;
+        }
+
+        .h8 {
+            position: relative;
+            top: 32px;
+            width: 100px;
+            left: 1150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <a href="{% url 'home' %}">home</a>
+            <a href="{% url 'about' %}">about</a>
+            <a href="{% url 'contact' %}">contact</a>
+            <a href="{% url 'product' %}">product</a>
+        </div>
+        <div class="side1">
+            <div class="sub1">
+
+                <p class="p1">Product</p>
+                <P CLASS="p1">Price</P>
+                <P CLASS="p1">Quantity</P>
+                <P CLASS="p1">Subtotal</P>
+                <div class="mid">
+                    <img class="img1" src="./images/facebook11.png">
+                    <p class="edit2">Product Title</p>
+                    <p class="edit3">$100.00</p>
+
+                    <p class="edit4">$100.00</p>
+                </div>
+                <div class="line"></div>
+                <div class="mid1">
+                    <img class="img2" src="./images/facebook11.png">
+                    <p class="edit4">$100.00</p>
+                    <p class="edit5">Product Title</p>
+
+                    <p class="edit6">$100.00</p>
+                </div>
+                <div class="line1"></div>
+            </div>
+            <div class="side2">
+                <div class="sub2">
+                    <h1 class="edit7">Cart Total</h1>
+                    <div class="line2"></div>
+                    <p class="edit8">S U B T O T A L</p>
+                    <p class="edit9">$200.00</p>
+                    <div class="line3"></div>
+                    <p class="edit10">T O T A L</p>
+                    <p class="edit11">$200.00</p>
+                    <button class="but1" type="button" value="Proceed To Checkout">Proceed To Checkout</button>
+                </div>
+            </div>
+        </div>
+        <div class="side3">
+            <div class="sub3">
+                <input class="box1" type="text" value="Coupon code">
+                <button class="but2" type="submit" value="Apply Coupon">Apply Coupon</button>
+            </div>
+        </div>
+    </div>
+    <div class="sub4">
+        <h1 class="h2">Join Our Newsletter</h1>
+        <h5>
+            <pre>Y O U R   E M A I L</pre>
+        </h5>
+        <div class="sub5"></div>
+        <button type="Subscribe" name="Subcribe">Subscribe</button>
+        <div class="sub6">
+            <img src="./image/facebook11.png" class="img5">
+            <img src="./image/instagram11.png" class="img5">
+            <img src="./image/twitter11.png" class="img5">
+        </div>
+        <div class="sub7">
+            <h6 class="h6">2021 All Rights Reserved</h6>
+            <h6 class="h7">Help & Info</h6>
+            <h6 class="h8">Terms & Privacy</h6>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>customer welcome</title>
+    <style>
+        table {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        tr {
+            background-color: wheat;
+            height: 30px;
+        }
+
+
+        th {
+            background-color: crimson;
+            color: white;
+            height: 30px;
+        }
+
+
+        td {
+            background-color: wheat;
+            height: 30px;
+        }
+
+        .btn {
+            text-decoration: none;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <form action="">
+            {%csrf_token%}
+            <table>
+                <tr class="tr">
+                    <th>LIST NO</th>
+                    <th>NAME</th>
+                    <th>AGE</th>
+                    
+                </tr>
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{name}}</td>
+                    <td>{{age}}</td>
+                    <td><a href="{% url 'update' id%}" class="btn btn-danger">UPDATE</a></td>
+                    <td><a href="{% url 'detailedview' id%}" class="btn btn-danger">view</a></td>
+                    <td><a href="/product/">VIEW PRODUCT</a></td>
+                    <td><a href="/logoutuser/">LOGOUT</a></td>
+                </tr>
+            </table>
+
+            
+
+    </body>
+
+</html>

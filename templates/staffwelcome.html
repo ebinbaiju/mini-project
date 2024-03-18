@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>staff welcome</title>
+    <style>
+        table {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        tr {
+            background-color: wheat;
+            height: 30px;
+        }
+
+
+        th {
+            background-color: crimson;
+            color: white;
+            height: 30px;
+        }
+
+
+        td {
+            background-color: wheat;
+            height: 30px;
+        }
+
+        .btn {
+            text-decoration: none;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <h1>Staff welcome</h1>
+        {{id}} {{name}} {{age}}
+        <div>
+            <td>Logout here<a href="/logoutuser1/" class="Logout">Logout</a></td><br><br>
+            <td>add a product<a href="/add_product/" class="">add product</a></td><br><br>
+
+        </div>
+        <form action="" method="POST" enctype="multipart/form-data">
+            <table>
+                <tr class="tr">
+                    <th>Id</th>
+                    <th>Product_name</th>
+                    <th>category</th>
+                    <th>Material</th>
+                    <th>Image</th>
+                    <th>Price</th>
+                    <th>update</th>
+                    <th>product update</th>
+                    <th>Delete</th>
+                </tr>
+                {% for i in es %}
+                </tr>
+                <tr>
+                    <td>{{forloop.counter}}</td>
+                    <td>{{i.product_name}}</td>
+                    <td>{{i.category}}</td>
+                    <td>{{i.material}}</td>
+                    <td><img src="{{ i.image.url }}" alt="img" height="100px" width="100px"></td>
+                    <td>{{i.price}}</td>
+                    <td><a href="{% url 'update1' id%}" class="btn btn-danger">UPDATE</a></td>
+                    <td><a href="{% url 'staffproduct_update' id%}" class="btn btn-danger">PRODUCT UPDATE</a></td>
+                    <td><a href="{% url 'deleted1' id%}" class="btn btn-danger">DELETE</a></td>
+
+                </tr>
+
+                {% endfor %}
+            </table>
+        </form>
+
+
+    </body>
+
+</html>

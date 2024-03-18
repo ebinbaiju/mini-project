@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jewellary management</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main-section {
+            width: 100%;
+            position: relative;
+        }
+
+        .main1 {
+            background-color: rgb(236, 229, 229);
+            position: relative;
+            width: 100%;
+            display: flex;
+        }
+
+        .navbar {
+            display: flex;
+            border-radius: 10px;
+            width: 100%;
+            height: 40px;
+            margin-top: 20px;
+        }
+        
+    
+
+         .a0 {
+            color: black;
+            padding: 10px 20px;
+            font-size: large;
+            position: absolute;
+            left: 150px;
+            text-decoration: none;
+
+        }
+
+        .a1 {
+            color: black;
+            padding: 10px 20px;
+            font-size: large;
+            position: absolute;
+            left: 250px;
+            text-decoration: none;
+
+        }
+
+        .a2 {
+            color: black;
+            padding: 10px 20px;
+            font-size: large;
+            position: absolute;
+            left: 350px;
+            text-decoration: none;
+        }
+
+        .a3 {
+            border-radius: 30px;
+            width: 80px;
+            height: 25px;
+            background-color: grey;
+            color: white;
+            position: absolute;
+            left: 475px;
+            top: 20px;
+            margin-top: 7px;
+            text-align: center;
+
+        }
+
+        .side1 {
+            flex: 60%;
+        }
+
+        .img1 {
+            height: 600px;
+        }
+
+        .side2 {
+            flex: 40%;
+        }
+
+        .h2 {
+            width: 420px;
+            position: absolute;
+            bottom: 200px;
+            left: 140px;
+        }
+
+        .h0 {
+            width: 420px;
+            position: absolute;
+            top: 150px;
+            left: 165px;
+        }
+
+        .h1 {
+            width: 420px;
+            position: absolute;
+            top: 200px;
+            left: 140px;
+        }
+
+        .a4 {
+            width: 200px;
+            height: 35px;
+            border-radius: 5px;
+            position: absolute;
+            left: 195px;
+            top: 460px;
+            background-color: black;
+            border: white 1px solid;
+            color: white;
+            text-decoration: none;
+        }
+
+        .main2 {
+            margin-left: 300px;
+            position: relative;
+            display: flex;
+        }
+
+        .side2 {
+            flex: 50%;
+        }
+
+        .img3 {
+            height: 400px;
+            width: 600px;
+            position: absolute;
+            top: 40px;
+            right: 760px;
+        }
+
+        .side3 {
+            flex: 50%;
+        }
+
+        .img4 {
+            height: 400px;
+            width: 600px;
+            position: absolute;
+            left: 500px;
+            top: 40px;
+
+        }
+
+        .div1 {
+            position: absolute;
+            top: 1170px;
+            left: 110px;
+        }
+
+        .img2 {
+            margin: 5px;
+            height: 200px;
+            width: 300px;
+        }
+
+        .h3 {
+            position: absolute;
+            bottom: 470px;
+            left: 535px;
+        }
+
+        .p1 {
+            position: absolute;
+            bottom: 440px;
+            left: 425px;
+        }
+
+        .a5 {
+            width: 200px;
+            height: 35px;
+            border-radius: 5px;
+            position: absolute;
+            left: 535px;
+            top: 445px;
+            background-color: black;
+            border: white 1px solid;
+            color: white;
+            text-decoration: none;
+        }
+
+        .main3 {
+            background-color: rgb(236, 229, 229);
+            padding: 30px;
+            margin-top: 100px;
+            position: relative;
+            height: 300px;
+            top: 970px;
+        }
+
+        h4 {
+            margin-top: 10px;
+            position: relative;
+            left: 20px;
+        }
+
+        .sub2 {
+            margin-top: 1%;
+        }
+
+        .img5 {
+            height: 18px;
+        }
+
+
+        .h5 {
+            position: relative;
+            top: 160px;
+            right: 20px;
+        }
+
+        .h6 {
+            position: relative;
+            top: 45px;
+            width: 100px;
+            left: 1070px;
+        }
+
+        .h7 {
+            position: relative;
+            top: 32px;
+            width: 100px;
+            left: 1150px;
+        }
+
+
+        .dropbtn {
+            background-color: #3498DB;
+            color: white;
+            padding: 9px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropbtn:hover,
+        .dropbtn:focus {
+            background-color: #2980B9;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            left: 50px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-section">
+        <div class="main1">
+            <div class="navbar">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">menu</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="{% url 'staff' %}">staff</a>
+                        <a href="{% url 'customer' %}">customer</a>
+                    </div>
+                </div>
+                <a class="a0" href="{% url 'home' %}">home</a>
+                <a class="a1" href="{% url 'about' %}">about</a>
+                <a class="a2" href="{% url 'contact' %}">contact</a>
+                <a href="/customer/">
+                    <button class="a3">Register</button></a>
+            </div>
+            <div class="side1">
+                <img src="/static/images/new_pic-removebg-preview - Copy.png" class="img1">
+            </div>
+            <div class="side2">
+                <h1 class="h0">ZIRCONIA </h1>
+                <h1 class="h1">WITH JAWELS</h1>
+                <h1 class="h2">THE LAXUARY EXCLUSIVE COLLECTION</h1>
+                <a href="/product/">
+                    <button class="a4">View Collection</button></a>
+            </div>
+        </div>
+        <div class="main2">
+            <div class="side3">
+                <img src="/static/images/Screenshot 2024-02-05 204527.png" class="img3">
+            </div>
+            <div class="side4">
+                <img src="/static/images/Screenshot 2024-02-05 204713.png" class="img4">
+            </div>
+        </div>
+        <div class="div1">
+            <h1 class="h3">Gold jewellary</h1>
+            <p class="p1">Discover the beauty of gold with our timeless gold collection</p>
+            <img src="/static/images/1.png" class="img2">
+            <img src="/static/images/2.png" class="img2">
+            <img src="/static/images/3.png" class="img2">
+            <img src="/static/images/4.png" class="img2">
+            <img src="/static/images/5.png" class="img2">
+            <img src="/static/images/6.png" class="img2">
+            <img src="/static/images/7.png" class="img2">
+            <img src="/static/images/8.png" class="img2">
+            <a href="/product/">
+                <button class="a5">See All</button></a>
+        </div>
+        <div class="main3">
+            <h1 class="h4">Join Our Newsletter</h1>
+            <h5>
+                <pre>Y O U R   E M A I L</pre>
+            </h5>
+
+            <div class="sub2">
+                <img src="/static/images/facebook.png" class="img5">
+                <img src="/static/images/instagram.png" class="img5">
+                <img src="/static/images/twitter.png" class="img5">
+            </div>
+            <div>
+                <h6 class="h5">2021 All Rights Reserved</h6>
+                <h6 class="h6">Help & Info</h6>
+                <h6 class="h7">Terms & Privacy</h6>
+            </div>
+        </div>
+</body>
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+
+</html>

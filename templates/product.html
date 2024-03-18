@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main-section {
+            width: 100%;
+            position: relative;
+        }
+
+        .main1 {
+            background-color: rgb(236, 229, 229);
+            position: relative;
+            width: 100%;
+            display: flex;
+        }
+
+        .navbar {
+            display: flex;
+            border-radius: 10px;
+            width: 100%;
+            height: 60px;
+            
+        }
+
+        .a0 {
+            color: black;
+            padding: 20px 20px;
+            font-size: large;
+            position: absolute;
+            left: 150px;
+            text-decoration: none;
+
+        }
+
+        .a1 {
+            color: black;
+            padding: 20px 20px;
+            font-size: large;
+            position: absolute;
+            left: 250px;
+            text-decoration: none;
+
+        }
+
+        .a2 {
+            color: black;
+            padding: 20px 20px;
+            font-size: large;
+            position: absolute;
+            left: 350px;
+            text-decoration: none;
+        }
+        .a5 {
+            color: black;
+            padding: 20px 20px;
+            font-size: large;
+            position: absolute;
+            left: 455px;
+            text-decoration: none;
+        }
+
+        .a3 {
+            border-radius: 30px;
+            width: 80px;
+            height: 25px;
+            background-color: grey;
+            color: white;
+            position: absolute;
+            left: 575px;
+            top: 16px;
+            text-align: center;
+
+        }
+
+        .h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .h2 {
+            text-align: center;
+        }
+
+        .cols {
+            position: relative;
+        }
+
+        .img1 {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 300px;
+            top: 50px;
+        }
+
+        .p1 {
+            position: absolute;
+            left: 310px;
+            top: 260px;
+            font-size: large;
+        }
+
+        .btn1 {
+            position: absolute;
+            left: 390px;
+            top: 260px;
+            border: 1px solid;
+            border-radius: 10px;
+            background-color: yellow;
+            color: black;
+            width: 80px;
+            height: 20px;
+            text-decoration: none;
+        }
+
+        .img2 {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 590px;
+            top: 31px;
+        }
+
+        .p2 {
+            position: absolute;
+            left: 605px;
+            top: 240px;
+            font-size: large;
+        }
+
+        .btn2 {
+            position: absolute;
+            left: 695px;
+            top: 240px;
+            border: 1px solid;
+            border-radius: 10px;
+            background-color: yellow;
+            color: black;
+            width: 80px;
+            height: 20px;
+            text-decoration: none;
+        }
+
+        .img3 {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 885px;
+            top: 12px;
+        }
+
+        .p3 {
+            position: absolute;
+            left: 900px;
+            top: 220px;
+            font-size: large;
+        }
+
+        .btn3 {
+            position: absolute;
+            left: 985px;
+            top: 220px;
+            border: 1px solid;
+            border-radius: 10px;
+            background-color: yellow;
+            color: black;
+            width: 80px;
+            height: 20px;
+            text-decoration: none;
+        }
+
+        .img4 {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 300px;
+            top: 340px;
+        }
+
+        .p4 {
+            position: absolute;
+            left: 310px;
+            top: 550px;
+            font-size: large;
+        }
+
+        .btn4 {
+            position: absolute;
+            left: 405px;
+            top: 550px;
+            border: 1px solid;
+            border-radius: 10px;
+            background-color: yellow;
+            color: black;
+            width: 80px;
+            height: 20px;
+            text-decoration: none;
+        }
+
+        .img5 {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 595px;
+            top: 322px;
+        }
+
+        .p5 {
+            position: absolute;
+            left: 605px;
+            top: 532px;
+            font-size: large;
+        }
+
+        .btn5 {
+            position: absolute;
+            left: 688px;
+            top: 532px;
+            border: 1px solid;
+            border-radius: 10px;
+            background-color: yellow;
+            color: black;
+            width: 80px;
+            height: 20px;
+            text-decoration: none;
+        }
+
+        .img6 {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 890px;
+            top: 305px;
+        }
+
+        .p6 {
+            position: absolute;
+            right: 510px;
+            top: 515px;
+            font-size: large;
+        }
+
+        .btn6 {
+            position: absolute;
+            right: 400px;
+            top: 515px;
+            border: 1px solid;
+            border-radius: 10px;
+            background-color: yellow;
+            color: black;
+            width: 80px;
+            height: 20px;
+            text-decoration: none;
+        }
+        .main3 {
+            background-color: rgb(236, 229, 229);
+            padding: 30px;
+            margin-top: 100px;
+            position: relative;
+            height: 300px;
+            top: 500px;
+        }
+
+        h4 {
+            margin-top: 10px;
+            position: relative;
+            left: 20px;
+        }
+
+        .sub2 {
+            margin-top: 1%;
+        }
+
+        .img7 {
+            height: 18px;
+        }
+
+
+        .h5 {
+            position: relative;
+            top: 160px;
+            right: 20px;
+        }
+
+        .h6 {
+            position: relative;
+            top: 45px;
+            width: 100px;
+            left: 1070px;
+        }
+
+        .h7 {
+            position: relative;
+            top: 32px;
+            width: 100px;
+            left: 1150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-section">
+        <div class="main1">
+            <div class="navbar">
+                <a class="a0" href="{% url 'home' %}">home</a>
+                <a class="a1" href="{% url 'about' %}">about</a>
+                <a class="a2" href="{% url 'contact' %}">contact</a>
+                <a class="a5" href="{% url 'cart' %}">cart</a>
+                
+            </div>
+        </div>
+        <div class="main2">
+            <div class="row">
+                <h1 class="h1">Jewellers</h1>
+                <h2 class="h2">Elevate your style with our exquisite collection of meticulously crafted jewellary,</h2>
+                <h2 class="h2">designed to capture the essence of elegance and individuality</h2>
+            </div>
+            <div class="cols">
+                <img src="/static/images/11.jpeg" class="img1">
+                <p class="p1">₹10235</p>
+                <button>
+                    <a href="" class="btn1">Add to Cart</a>
+                </button>
+            </div>
+            <div class="cols">
+                <img src="/static/images/14.jpeg" class="img2">
+                <p class="p2">₹10235</p>
+                <button>
+                    <a href="" class="btn2">Add to Cart</a>
+                </button>
+            </div>
+            <div class="cols">
+                <img src="/static/images/13.jpeg" class="img3">
+                <p class="p3">₹10235</p>
+                <button>
+                    <a href="" class="btn3">Add to Cart</a>
+                </button>
+            </div>
+            <div class="cols">
+                <img src="/static/images/18.jpeg" class="img4">
+                <p class="p4">₹10235</p>
+                <button>
+                    <a href="" class="btn4">Add to Cart</a>
+                </button>
+            </div>
+            <div class="cols">
+                <img src="/static/images/17.jpeg" class="img5">
+                <p class="p5">₹10235</p>
+                <button>
+                    <a href="" class="btn5">Add to Cart</a>
+                </button>
+            </div>
+            <div class="cols">
+                <img src="/static/images/16.jpeg" class="img6">
+                <p class="p6">₹10235</p>
+                <button>
+                    <a href="" class="btn6">Add to Cart</a>
+                </button>
+            </div>
+            <div class="main3">
+                <h1 class="h4">Join Our Newsletter</h1>
+                <h5>
+                    <pre>Y O U R   E M A I L</pre>
+                </h5>
+                
+                <div class="sub2">
+                    <img src="/static/images/facebook.png" class="img7">
+                    <img src="/static/images/instagram.png" class="img7">
+                    <img src="/static/images/twitter.png" class="img7">
+                </div>
+                <div>
+                    <h6 class="h5">2021 All Rights Reserved</h6>
+                    <h6 class="h6">Help & Info</h6>
+                    <h6 class="h7">Terms & Privacy</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
